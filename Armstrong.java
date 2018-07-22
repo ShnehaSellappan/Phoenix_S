@@ -1,11 +1,12 @@
 public class Armstrong {
 
 	public static void main(String[] args) {
-int num,i,count=0,r=1,r1,bas,exp,r3=0;
+int N,i,count=0,r=1,r1,bas,exp,r3=0;
 double res=0;
 Scanner pn=new Scanner(System.in);
-num =pn.nextInt();
-bas=num;
+N =pn.nextInt();
+bas=N;
+		if(bas<=100000) {
 while(bas!=0){
 	r=bas%10;
 	count++;
@@ -19,11 +20,12 @@ while(bas!=0){
 	bas=bas/10;
 }
 int res1=  (int) res;
-if(num==res1) {
+if(N==res1) {
 	System.out.println("Yes");
 }
 else {
 	System.out.println("No");
 }
   }
+}
 }
