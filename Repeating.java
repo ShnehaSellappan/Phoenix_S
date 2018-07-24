@@ -7,6 +7,7 @@ int N;
 Scanner dn=new Scanner(System.in);
 N =dn.nextInt();
 int i,j,count=0;
+if(N<=100000) {
 	int a[]=new int[N];
 	for(i=0;i<a.length;i++) {
 		a[i]=dn.nextInt();
@@ -24,4 +25,6 @@ int i,j,count=0;
  }
 }
 	}
+}
+
 
