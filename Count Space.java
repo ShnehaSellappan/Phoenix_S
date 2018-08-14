@@ -8,6 +8,7 @@ public class CountSpace {
 	System.out.println("Entert str:");
 	Scanner cw=new Scanner(System.in);
 	str=cw.nextLine();
+		if(str.length()<1000) {
 	for(int i=0;i<str.length();i++) {
 		char ch=str.charAt(i);
 		if(ch==' ') {
@@ -16,4 +17,5 @@ public class CountSpace {
 	}
 	System.out.println(count);
 	}
+}
 }
